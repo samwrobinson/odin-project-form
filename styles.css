@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --background-color: #f2f2f2;
+    --error-color: rgba(240, 83, 101, 0.4);
+    --border-color: #322214;
+    --focus-color: rgba(96, 210, 248, 0.9);
+    --text-color: #1E1E24;
+    --valid-color: rgba(144, 238, 144, 0.3);
+    font: "Poppins", sans-serif;
+    font-size: 16px;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+form {
+  width: 90%;
+  height: auto;
+  margin: 5%;
+  padding: 5%;
+  border: rgba(169, 169, 169, 0.3) solid 1px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+span {
+    background-color: transparent;
+}
+input {
+  width: 100%;
+  margin: 3% 0;
+  height: 2rem;
+  border: #1E1E24 solid 1px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  background-color: #f2f2f2;
+}
+input:focus {
+  border-color: var(--focus-color);
+  outline: none !important;
+}
+input:valid {
+  border-color: var(--valid-color);
+  background-color: var(--valid-color);
+  outline: none !important;
+}
+input:invalid:not(:placeholder-shown) {
+  border-color: var(--error-color);
+  background-color: var(--error-color);
+  outline: none !important;
+}
+.vertical-banner {
+    width: 100%;
+    height: 40%;
+    background-image: url(images/adrian-swancar-Y8W7j4ETCsc-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.vertical-banner span h1 {
+    color: var(--background-color);
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(169, 169, 169, 0.3);
+    height: 20%;
+}
+.group {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 10%
+}
+
+  /* My Fonts */
+  .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  @media screen and (min-width: 700px) {
+    body {
+      flex-direction: row;
+    }
+    form {
+      width: 100%;
+      margin: 2% 0;
+    }
+    .vertical-banner {
+      width: 40%;
+      height: 100%;
+    }
+    input {
+      width: 175px;
+      display: inline-block;
+    }
+    .group {
+      flex-direction: row;
+      margin: 3% 0;
+      width: 100%;
+    }
+    /* needs work */
+    .vertical-banner span h1 {
+      margin-top: 100%;
+      height: 10%;
+    }
+  }
