@@ -12,73 +12,91 @@
 </head>
 <body class="poppins-regular">
     <div class="vertical-banner">
-        <span><h1 class="poppins-bold">Contact me.</h1></span>
+        <span>
+            <h1 class="poppins-light">Contact us.</h1>
+            <img src="images/upland_header.png" alt="upland coffee logo" id="upland-logo">
+        </span>
     </div>
-    <div class="form-container">
-        <form action="#" method="get">
-            <div class="group">
-                <div>
-                    <label for="first_name">First Name <strong>*</strong></label>
-                    <input 
-                    type="text" 
-                    id="first_name" 
-                    name="first_name"
-                    required
-                    placeholder="Sam">
+    <section class="intro-and-form">
+        <div class="intro">
+            <h3>Welcome to Samuel Robinson
+                Photography! To get in touch with me,
+                please fill out the following form.
+            </h3>
+            <h4>I look forward to collaborating
+                with you on your project!
+            </h4>
+        </div>
+        <div class="form-container">
+            <form action="#" method="get">
+                <div class="group">
+                    <div>
+                        <label for="first_name">First Name <strong>*</strong></label>
+                        <input
+                        type="text"
+                        id="first_name"
+                        name="first_name"
+                        required
+                        placeholder="Sam">
+                    </div>
+                    <div>
+                        <label for="last_name">Last Name <Stong>*</Stong></label>
+                        <input
+                        type="text"
+                        id="last_name"
+                        name="last_name"
+                        required
+                        placeholder="Robinson">
+                    </div>
                 </div>
-                <div>
-                    <label for="last_name">Last Name <Stong>*</Stong></label>
-                    <input 
-                    type="text" 
-                    id="last_name" 
-                    name="last_name"
-                    required
-                    placeholder="Robinson">
+                <div class="group">
+                    <div>
+                        <label for="user_email">Email <strong>*</strong></label>
+                        <input
+                        type="email"
+                        id="user_email"
+                        name="user_email"
+                        required
+                        placeholder="name@yourprovider.com"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    </div>
+                    <div>
+                        <label for="user_phone">Phone Number</label>
+                        <input
+                        type="tel"
+                        id="user_phone"
+                        name="user_phone"
+                        required
+                        pattern="^\d{3}-\d{3}-\d{4}$"
+                        placeholder="802-999-9999">
+                    </div>
                 </div>
+                <div class="group">
+                    <div>
+                        <label for="user_pass">Password <strong>*</strong></label>
+                        <input
+                        type="password"
+                        id="user_pass"
+                        name="user_pass"
+                        placeholder="LuckyDog45!"
+                        required>
+                    </div>
+                    <div>
+                        <label for="pass_confirm">Re-enter Password <strong>*</strong></label>
+                        <input
+                        type="password"
+                        id="pass_confirm"
+                        name="pass_confirm"
+                        placeholder="LuckyDog45!"
+                        required>
+                    </div>
+                </div>
+            </form>
+            <div class="button">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Sign in.</a></p>
             </div>
-            <div class="group">
-                <div>
-                    <label for="user_email">Email <strong>*</strong></label>
-                    <input 
-                    type="email" 
-                    id="user_email" 
-                    name="user_email"
-                    required
-                    placeholder="name@yourprovider.com"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                </div>
-                <div>
-                    <label for="user_phone">Phone Number</label>
-                    <input 
-                    type="tel" 
-                    id="user_phone" 
-                    name="user_phone"
-                    required
-                    pattern="^\d{3}-\d{3}-\d{4}$"
-                    placeholder="802-999-9999">
-                </div>
-            </div>
-            <div class="group">
-                <div>
-                    <label for="user_pass">Password <strong>*</strong></label>
-                    <input 
-                    type="password" 
-                    id="user_pass" 
-                    name="user_pass"
-                    placeholder="LuckyDog45!"
-                    required>
-                </div>
-                <div>
-                    <label for="pass_confirm">Confirm Your Password</label>
-                    <input 
-                    type="password" 
-                    id="pass_confirm" 
-                    name="pass_confirm"
-                    placeholder="LuckyDog45!"
-                    required>
-                </div>
-            </div>
-        </form>
-    </div>
+        </div>
+    </section>
 </body>
 </html>
