@@ -31,7 +31,7 @@ form {
   justify-content: space-around;
   width: 90%;
   height: auto;
-  margin: 5% 0;
+  margin: 2% 5%;
   padding: 5%;
   border: rgba(169, 169, 169, 0.3) solid 1px;
   border-radius: 15px;
@@ -59,13 +59,13 @@ input {
 .button {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   height: 100%;
-  width: 100%;
+  width: 90%;
+  margin: 0 5% 5% 10%;
 }
 button {
-  margin-left: 7%;
-  margin-bottom: 7%;
-  width: 40%;
+  width: 30%;
   height: 50px;
   background-color: var(--background-color);
   border-radius: 15px;
@@ -257,9 +257,9 @@ input:invalid:not(:placeholder-shown) {
     .button {
       display: flex;
       justify-content: flex-start;
-      width: 80%;
+      width: 90%;
       height: 100%;
-      margin: 0 10%;
+      margin: 0 5%;
     }
     button {
       margin: 1% 0 0 0;
@@ -292,11 +292,11 @@ input:invalid:not(:placeholder-shown) {
 
   @media screen and (min-width: 1000px) {
     .button {
-      width: 90%;
-      margin: 0 5%;
+      width: 80%;
+      margin: 0 10%;
     }
     .group {
-      width: 90%;
+      width: 100%;
       margin: 0;
     }
     form {
@@ -306,12 +306,12 @@ input:invalid:not(:placeholder-shown) {
       width: 100%;
     }  
     .group div {
-      margin: 0 20px;
+      margin: 0 50px;
     }
     .intro {
       margin-top: 10%;
     }
     .vertical-banner {
-      width: 70%;
+      width: 60%;
     }
   }
