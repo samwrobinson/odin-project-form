@@ -25,6 +25,7 @@
             <h4 class="poppins-regular">I look forward to collaborating
                 with you on your project!
             </h4>
+            <h5><strong>* indicates a required field.</strong></h5>
         </div>
         <div class="form-container">
             <form action="#" method="get">
@@ -60,7 +61,7 @@
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                     </div>
                     <div>
-                        <label for="user_phone">Phone Number</label>
+                        <label for="user_phone">Phone Number <strong>*</strong></label>
                         <input
                         type="tel"
                         id="user_phone"
@@ -77,6 +78,10 @@
                         type="password"
                         id="user_pass"
                         name="user_pass"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                        title="Must contain at least one number and one
+                         uppercase and lowercase letter, and at least 
+                         8 or more characters."
                         placeholder="LuckyDog45!"
                         required>
                     </div>
@@ -87,6 +92,8 @@
                         id="pass_confirm"
                         name="pass_confirm"
                         placeholder="LuckyDog45!"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                        title="Password must match prior entry."
                         required>
                     </div>
                 </div>

@@ -3,8 +3,8 @@ let validation = document.querySelector('#pass_confirm')
 let button = document.querySelector('#submit');
 const userPassword = '';
 
-function validate() {
-    if (password === validation) {
+function comparePass() {
+    if (password.value === validation.value) {
         userPassword = validation;
     } else {
         alert('Please provide matching passwords.')
@@ -12,5 +12,5 @@ function validate() {
 }
 
 button.addEventListener('click', () => {
-    validate();
+    comparePass();
 });

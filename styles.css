@@ -323,7 +323,7 @@ input:invalid:not(:placeholder-shown) {
       margin: 0 50px;
     }
     .intro {
-      margin-top: 14%;
+      margin-top: 10%;
     }
     .vertical-banner {
       width: 60%;
