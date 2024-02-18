@@ -281,7 +281,6 @@ input:invalid:not(:placeholder-shown) {
     }
     .group {
       flex-direction: row;
-      justify-content: flex-start;
       margin: 3% 0;
       width: 100%;
     }
